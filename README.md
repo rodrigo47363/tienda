@@ -1,59 +1,60 @@
-Claro, aquí te dejo un ejemplo de un README en formato Markdown para tu proyecto:
+# 🛒 Tienda Los García — Sistema de Gestión de Inventario en C++
+
+[![C++](https://img.shields.io/badge/Language-C%2B%2B-blue?logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey)](https://github.com/rodrigo47363)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+> **Sistema interactivo de consola para el control de inventario, registro de proveedores, alta de empleados y transacciones de punto de venta, implementado en C++ con persistencia de datos en archivos planos.**
 
 ---
 
-# Tienda Los Garcia
+## 📋 Funcionalidades
 
-Este es un sistema de registro y control para la tienda "Los Garcia".
-
-## Descripción
-
-El proyecto consiste en un programa en C++ que simula un sistema de registro y control para una tienda. Permite registrar productos, empleados y proveedores, así como eliminar productos de la base de datos.
-
-## Características
-
-- Registro de productos con clave, nombre, precio, cantidad y marca.
-- Registro de empleados con matrícula, nombre, dirección y número telefónico.
-- Registro de proveedores con clave, nombre, correo y número telefónico.
-- Eliminación de productos de la base de datos.
-- Interfaz gráfica para una experiencia amigable al usuario.
-
-## Requisitos
-
-- Compilador de C++ (se recomienda GCC en sistemas Unix o MinGW en Windows).
-- Sistema operativo compatible (Windows, Linux, macOS).
-
-## Instalación
-
-1. Clona este repositorio en tu máquina local.
-   ```bash
-   git clone https://github.com/rodrigo47363/tienda
-   ```
-
-2. Compila el programa utilizando el compilador de C++.
-   ```bash
-   g++ main.cpp -o tienda
-   ```
-
-3. Ejecuta el programa.
-   ```bash
-   ./tienda
-   ```
-
-## Uso
-
-1. Al ejecutar el programa, ingresa la clave de acceso para acceder al menú principal.
-2. Desde el menú principal, selecciona una opción para registrar productos, empleados o proveedores, eliminar productos o salir del programa.
-3. Sigue las instrucciones en pantalla para completar las operaciones deseadas.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si deseas mejorar el programa, puedes realizar un fork del repositorio, hacer tus cambios y enviar un pull request.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
+- **Gestión de Inventario:**
+  - Registro de productos (código, nombre, precio unitario, stock disponible).
+  - Consulta y búsqueda en tiempo real de artículos.
+  - Eliminación y actualización de existencias en catálogo.
+- **Administración de Personal y Proveedores:**
+  - Registro y consulta de empleados.
+  - Catálogo de proveedores asociados a la distribución de mercancía.
+- **Persistencia en Disco:**
+  - Almacenamiento estructurado en `tienda.txt` para garantizar la persistencia de las operaciones entre sesiones.
 
 ---
 
-Puedes ajustar este README según las especificaciones y detalles específicos de tu proyecto. ¡Espero que te sea útil! Si necesitas más ayuda o cambios, házmelo saber.
+## 🚀 Compilación y Ejecución
+
+### Prerrequisitos
+- Compilador de C++ (`g++` o `clang++`)
+- Terminal estándar
+
+### En Linux / macOS
+```bash
+# Compilar con optimización estándar
+g++ -O2 -std=c++17 tienda.cpp -o tienda
+
+# Ejecutar el sistema
+./tienda
+```
+
+### En Windows (MinGW)
+```cmd
+g++ -O2 -std=c++17 tienda.cpp -o tienda.exe
+tienda.exe
+```
+
+---
+
+## 📂 Estructura del Proyecto
+
+```text
+tienda/
+├── tienda.cpp      # Código fuente principal con lógica de negocio y menús
+├── tienda.txt      # Archivo de almacenamiento persistente de datos
+└── README.md       # Documentación técnica del proyecto
+```
+
+---
+
+## ⚖️ Licencia
+Distribuido bajo la Licencia **MIT**.
